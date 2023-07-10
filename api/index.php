@@ -97,7 +97,14 @@ switch (ENVIRONMENT)
  * This variable must contain the name of your "system" directory.
  * Set the path if it is not in the same directory as this file.
  */
-	$system_path = 'api/system';
+	$system_path = __DIR__ . '/api/system';
+
+	// ...
+
+	// Set the current directory correctly for CLI requests
+	if (defined('STDIN')) {
+		chdir(dirname(__FILE__));
+	}$system_path = 'api/system';
 
 /*
  *---------------------------------------------------------------
