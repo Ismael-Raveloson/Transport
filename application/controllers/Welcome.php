@@ -24,4 +24,8 @@ class Welcome extends CI_Controller {
 		$this->load->view('page/index');
 		
 	}		
+
+	public function link(){
+		$this->load->view('page/link');
+	}
 }

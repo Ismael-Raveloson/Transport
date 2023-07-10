@@ -39,6 +39,7 @@
             <span class="passager" data-value="15">15</span>
         </div>
         <button type="submit" id="sender">Valider</button>
+        <a href="<?php echo base_url()?>Welcome/link">Lien </a>
     </div>
 
     <script>
